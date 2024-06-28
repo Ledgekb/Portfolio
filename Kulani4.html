@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulani Baloyi's Portfolio</title>
+    <meta name="description" content="Portfolio of Kulani Baloyi, a software development student at Tshwane University of Technology.">
+    <meta name="keywords" content="Kulani Baloyi, software development, portfolio, Tshwane University of Technology">
+    <meta name="author" content="Kulani Baloyi">
+    <style>
+        /* Global reset and base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Main content section */
+        .content {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Links */
+        .content a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .content a:hover {
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Background animation */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.8));
+            animation: animate 10s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scale(1);
+                filter: blur(0px);
+            }
+            100% {
+                transform: scale(1.5);
+                filter: blur(3px);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header nav ul li {
+                margin: 0 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header>
+        <h1>Kulani Baloyi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#education" onclick="showSection('education')">Education</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <p>Hello! My name is Kulani Baloyi, and I am currently studying Information Technology with a specialization in Software Development at Tshwane University of Technology. I am passionate about leveraging technology to solve real-world problems and improve people's lives. Through my academic journey, I have developed a strong foundation in programming languages and software engineering principles. I am eager to apply my knowledge and skills to create innovative solutions that make a positive impact. My dedication to continuous learning and problem-solving, combined with my enthusiasm for technology, motivates me to excel and contribute meaningfully in the field of software development.</p>
+    </section>
+
+    <section id="education" class="content hidden">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>High School Attended: Rotterdam Secondary School</h3>
+            <table>
+                <tr>
+                    <td class="label">Highest Grade Passed:</td>
+                    <td class="content">Grade 12</td>
+                </tr>
+                <tr>
+                    <td class="label">Certificate:</td>
+                    <td class="content">Bachelor Degree</td>
+                </tr>
+                <tr>
+                    <td class="label">Subjects Passed:</td>
+                    <td class="content">
+                        Mathematics, Physical Sciences, Life Sciences, Agricultural Sciences, English First Additional Language, Setsonga Home Language, Life Orientation
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Year Passed:</td>
+                    <td class="content">2016</td>
+                </tr>
+            </table>
+
+            <h3>Tertiary Education Attended: Tshwane University of Technology</h3>
+            <table>
+                <tr>
+                    <td class="label">Degree:</td>
+                    <td class="content">Bachelor of Information Technology in Software Development</td>
+                </tr>
+                <tr>
+                    <td class="label">Year Started:</td>
+                    <td class="content">2018</td>
+                </tr>
+                <tr>
+                    <td class="label">Year of Completion:</td>
+                    <td class="content">2024</td>
+                </tr>
+                <tr>
+                    <td class="label">Major Subjects:</td>
+                    <td class="content">
+                        Software Engineering, Database Systems, Web Development, Data Structures and Algorithms, Computer Networks, App Development, Mobile Development, Software Testing, Business Analysis
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="skills" class="content hidden">
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+                <li>Time management</li>
+                <li>Adaptability</li>
+                <li>Critical Thinking</li>
+                <li>Leadership</li>
+                <li>Creativity</li>
+                <li>Organizational Skills</li>
+                <li>Attention to Detail</li>
+            </ul>
+        </div>
+
+        <div class="programming-skills">
+            <h3>Programming Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>Embarcadero</li>
+                <li>Linux</li>
+                <li>Version Control (Git)</li>
+                <li>Debugging</li>
+                <li>API Integration</li>
+                <li>Agile Methodologies</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content hidden">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kulaniledge@gmail.com">kulaniledge@gmail.com</a></p>
+        <p>Contact: 076-599-2459</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kulani-baloyi-b00443148" target="_blank">linkedin.com/in/kulani-baloyi-b00443148</a></p>
+        <p>GitHub: <a href="https://github.com/Ledgekb/Work.git" target="_blank">github.com/Ledgekb/Work.git</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kulani Baloyi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('education').classList.add('hidden');
+            document.getElementById('skills').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Show 'About Me' section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('about');
+        });
+    </script>
+</body>
+</html>
