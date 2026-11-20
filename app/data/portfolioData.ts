@@ -149,7 +149,7 @@ export const projectsData: Project[] = [
     subtitle: "Full-Stack Restaurant Ordering, Stock & Fleet Management System",
     description:
       "Delicious Buffet is a full-stack restaurant ordering and management web application built with React, Vite, Tailwind CSS, Node.js/Express, and MySQL. It features role-based access control for customers, administrators, and delivery drivers—allowing customers to browse categorized menu items, manage their cart, submit orders, select payment methods, and track order deliveries in real time. Administrators can oversee order fulfillment, track live stock quantities, and perform full CRUD operations on menu items (including image uploads and pricing discounts), while delivery drivers can view and update active order delivery statuses.",
-    image: "/projects/project-1.png",
+    image: "/projects/delicious-buffet.png",
     link: "https://delicious-buffet.vercel.app",
     tags: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "Role-Based Auth"],
   },
