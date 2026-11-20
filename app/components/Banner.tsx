@@ -63,22 +63,20 @@ export default function Banner(): React.JSX.Element {
               </div>
 
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto">
-                <Image
-                  src="/assets/me.png"
-                  alt={`${personalInfo.name} - Software Engineer`}
-                  width={320}
-                  height={320}
-                  className="max-w-full absolute object-contain z-10"
-                  priority
-                />
-                <Image
-                  src="/assets/me-glow.png"
-                  alt="Glow effect"
-                  width={320}
-                  height={320}
-                  className="max-w-full absolute object-contain opacity-80 animate-pulse"
-                  priority
-                />
+                {/* Ambient glow effect */}
+                <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-purple-600 via-violet-500 to-indigo-600 opacity-60 blur-2xl animate-pulse" />
+
+                {/* Avatar container */}
+                <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-purple-500/50 shadow-2xl shadow-purple-950/80 bg-slate-950">
+                  <Image
+                    src="/assets/me.png"
+                    alt={`${personalInfo.name} - Software Engineer`}
+                    fill
+                    sizes="(max-width: 768px) 256px, 320px"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
